@@ -27,10 +27,10 @@
     <h2>응답 헤더 출력하기</h2>
 
     <%
-        Collection<String> headerNames = response.getHeaderNames();
-
+        Collection<String> headerNames = response.getHeaderNames(); // getHeaderNames = 헤더네임을 모두 가져온다
+        //콜렉션<스트링> 스트링타입의 배열 이름 headerNames로 생성하고 리스폰.겟헤더네임 = 응답받은 헤더네임을 모두 가져온다
         for(String hName : headerNames) {
-            String hValue = response.getHeader(hName);
+            String hValue = response.getHeader(hName); //!! 중요 getHeader에 이름(name)을 넣으면 값(value)를 뱉어준다!!! 이게매우중요하다!!
         %>
           <li><%=hName%> : <%=hValue%> </li>
         <%
@@ -39,7 +39,8 @@
 
         <h2>myNum 만 출력하기</h2>
         <%
-            Collection<String> myNum = response.getHeaders("myNum");
+            Collection<String> myNum = response.getHeader("myNum");
+            //!! 중요 getHeader's' 다 겟헤더 가아니라 겟헤더즈다! 겟헤더즈(네임) = 그 네임의 모든 밸류를 가져온다!왜? s(복수형)니까
             for(String num : myNum) {
         %>
                 <li>myNum : <%=num%></li>
