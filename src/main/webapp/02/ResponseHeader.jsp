@@ -39,7 +39,7 @@
 
         <h2>myNum 만 출력하기</h2>
         <%
-            Collection<String> myNum = response.getHeader("myNum");
+            Collection<String> myNum = response.getHeaders("myNum");
             //!! 중요 getHeader's' 다 겟헤더 가아니라 겟헤더즈다! 겟헤더즈(네임) = 그 네임의 모든 밸류를 가져온다!왜? s(복수형)니까
             for(String num : myNum) {
         %>
