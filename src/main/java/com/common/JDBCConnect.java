@@ -9,9 +9,6 @@ import java.sql.*;
 
 public class JDBCConnect {
 
-
-
-
     public Connection con;
     //데이터베이스와 연결을 담당
     public Statement stmt;
