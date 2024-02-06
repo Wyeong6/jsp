@@ -8,10 +8,11 @@ public class Cookiemanager {
 
     //1. 쿠키생성
     //이름, 값, 유지기간 파라메터를 받아와서 새로운 쿠키 생성
-    /*
-    *@param : cName 쿠키 이름
-    *@param : cValue 쿠키 값
-    *@param : cTime 쿠키 유지기간(max age)
+    /**
+     * @param  cName 쿠키 이름
+     * @param  cValue 쿠키 값
+     * @param  cTime 쿠키 유지기간(max age)
+     * @throws 예외처리 하는 방식
     */
 
 

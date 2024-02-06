@@ -11,6 +11,9 @@
   <%
     JDBCConnect jdbc1 = new JDBCConnect();
     jdbc1.close();
+/*
+    session.setMaxInactiveInterval(1200);
+*/
   %>
 
   <h2>JDBC 연결 테스트2</h2>

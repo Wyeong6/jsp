@@ -12,7 +12,7 @@
         JDBCConnect jdbc = new JDBCConnect();
 
         //테스트용 입력값
-        String id = "test1";
+        String id = "test2";
         String pass = "1234";
         String name = "테스트1";
 

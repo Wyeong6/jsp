@@ -15,6 +15,8 @@
     <%
         int pInt = (Integer)pageContext.getAttribute("pageInt");
         String pStr = pageContext.getAttribute("pageStr").toString();
+        // pageContext.getattribute는 Object(자바의 최상위 클래스)라서
+        // 그냥 String엔 담을수없다 .toString() 으로 변환시켜줘야함!
         Person person = (Person) pageContext.getAttribute("pagePerson");
     %>
 
