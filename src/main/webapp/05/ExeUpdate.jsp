@@ -12,9 +12,9 @@
         JDBCConnect jdbc = new JDBCConnect();
 
         //테스트용 입력값
-        String id = "test2";
-        String pass = "1234";
-        String name = "테스트1";
+        String id = "KIM";
+        String pass = "5555";
+        String name = "김";
 
         //쿼리문 생성
         String sql = "INSERT INTO scott.member_jsp VALUES(?,?,?,sysdate)";
