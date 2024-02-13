@@ -57,7 +57,7 @@ public class BoardDAO extends DBConnPool {
         //WHERE content LIKE '%keyword%';
         query += " ORDER BY num desc";
 
-
+        
         try {
             stmt = con.createStatement();
             rs = stmt.executeQuery(query);
