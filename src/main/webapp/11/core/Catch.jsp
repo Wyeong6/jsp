@@ -11,7 +11,6 @@
 
   <%
     int num1 = 100;
-
   %>
 
   <c:catch var="eMsg">

@@ -15,7 +15,7 @@
 
     <%--변수 선언--%>
     <c:set var="number" value="100"/>
-    <h2>choose 태그로 홀짝 판단</h2>
+
     <c:choose>
         <c:when test="${number % 2 == 0}">
             ${number}는 짝수입니다.
@@ -34,6 +34,7 @@
     </form>
 
     <%--모든 과목 점수가 입력되었는지 확인--%>
+    <h2>choose 태그로 홀짝 판단</h2>
     <c:if test="${!(empty param.kor or empty param.eng or empty param.math)}">
         <%--평균 계산--%>
         <c:set var="avg" value="${(param.kor + param.eng +param.math) / 3 }"/>

@@ -14,9 +14,11 @@
     <c:set var="elVar" value="${directVar % 5}"/>
     <c:set var="expVar" value="<%=new Date()%>"/>
     <c:set var="betweenVar"> 변수값 이렇게 설정 </c:set>
+    <c:set var="helloBye" value="8899"/>
 
     <h2>EL을 이용해 변수 출력</h2>
     <ul>
+        <li>helloBye : ${helloBye}</li>
         <li>directVar : ${pageScope.directVar}</li>
         <li>elVar : ${elVar}</li>
         <li>expVar : ${expVar}</li>
