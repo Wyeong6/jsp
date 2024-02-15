@@ -56,7 +56,7 @@ public class WriteController extends HttpServlet {
         int result = dao.insertWrite(dto);
         dao.close();
         
-        if(result == 1) { // 글쓰기 성공
+        if(result == 1) { // 글쓰기 성공eq14sa d
             resp.sendRedirect("../mvcboard/list.do");
         }else { //글쓰기 실패
             JSFunction.alertLocation(resp,"글쓰기 실패", "../mvcboard/write.do");
